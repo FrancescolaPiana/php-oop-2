@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+.min{
+    width: 1170px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: .3rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mmg{
+    height:  250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+img{
+    margin-left: -20px;
+    width: 300px;
+}
+
+.text{
+    margin: 0 .3rem;
+}
+
+h1{
+    height: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a{
+    text-decoration: none;
+}
