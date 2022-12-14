@@ -5,6 +5,21 @@ include __DIR__ . './Models/Cibo.php';
 include __DIR__ . './Models/Giochi.php';
 include __DIR__ . './Data.php';
 
+require_once __DIR__ . './Traits/Dimensioni.php';
+
+$ogg5 = new Cibo(2, "nome cibo", 10.99, "gusto", 3.5, "scadenza", "percorso immagine", new Category("Cat"));
+try {
+    $ogg5->SetDimensions('50', '100', '150');
+} catch (Exception $e) {
+    echo 'Eccezzione:' . $e->getMessage();
+}
+
+$ogg6 = new Cibo(2, "nome cibo", 10.99, "gusto", 3.5, "scadenza", "percorso immagine", new Category("Cat"));
+
+
+
+var_dump($ogg5);
+var_dump($ogg6);
 ?>
 
 <!DOCTYPE html>

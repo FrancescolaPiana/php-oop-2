@@ -1,7 +1,9 @@
 <?php
 require_once 'Categorie.php';
+require_once './Traits/Dimensioni.php';
 class Product
 {
+    use Dimensioni;
     public $id;
     public $name;
     public $price;
